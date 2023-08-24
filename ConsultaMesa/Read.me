@@ -1,0 +1,37 @@
+Para desplegar tu aplicación Flask en un servicio de alojamiento web como Azure App Service y hacerla accesible a través de una URL como `https://aniversarioeimi.azurewebsites.net/`, aquí tienes los pasos generales que debes seguir:
+
+1. **Preparar la Aplicación**:
+   - Asegúrate de que tu aplicación Flask esté funcionando correctamente en tu entorno de desarrollo local.
+
+2. **Crear una Cuenta en Azure**:
+   - Si aún no tienes una cuenta en Azure, regístrate en https://azure.com.
+
+3. **Crear una Aplicación Web en Azure**:
+   - Inicia sesión en el portal de Azure (https://portal.azure.com).
+   - Crea un nuevo recurso de "Aplicación Web" o "App Service" en Azure.
+   - Configura los detalles de la aplicación, como el nombre, el grupo de recursos y el plan de hospedaje.
+
+4. **Desplegar la Aplicación en Azure**:
+   - Hay varias formas de desplegar tu aplicación en Azure. Aquí mencionaré dos enfoques comunes:
+
+     a. **Despliegue Manual**:
+        - Sube tu código de aplicación Flask (incluyendo `app.py`, archivos estáticos y plantillas) a tu repositorio de código preferido (como GitHub o Azure DevOps).
+        - En la configuración de tu App Service en Azure, configura la opción de despliegue continuo para conectar tu repositorio.
+        - Azure automáticamente desplegará y actualizará tu aplicación cuando hagas cambios en el repositorio.
+
+     b. **Despliegue por FTP / VS Code**:
+        - Usando Visual Studio Code y la extensión de Azure App Service, puedes configurar un despliegue directo desde VS Code a tu App Service en Azure.
+
+5. **Configurar Variables de Entorno**:
+   - Configura las variables de entorno necesarias en tu App Service en Azure, como `FLASK_APP` y `FLASK_ENV`, para indicar a Flask cómo se debe ejecutar la aplicación.
+
+6. **Configurar el Servicio Web**:
+   - En la configuración de tu App Service, asegúrate de que esté configurado para ejecutar una aplicación Python y que esté utilizando la versión correcta de Python (por ejemplo, Python 3.8).
+
+7. **Abrir la Página Web**:
+   - Una vez desplegada, tu aplicación Flask estará disponible en la URL que proporciona Azure, como `https://aniversarioeimi.azurewebsites.net/`.
+
+8. **Configurar DNS Personalizado (Opcional)**:
+   - Si deseas utilizar un dominio personalizado en lugar de la URL predeterminada proporcionada por Azure, puedes configurar la gestión de dominios en el portal de Azure y actualizar la configuración DNS en tu proveedor de dominio.
+
+https://learn.microsoft.com/es-es/azure/app-service/quickstart-python?tabs=flask%2Cwindows%2Cvscode-aztools%2Cvscode-deploy%2Cdeploy-instructions-azportal%2Cterminal-bash%2Cdeploy-instructions-zip-azcli

@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+*{
+  font-family: 'Rubik', cursive;
+  
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  max-width: 980px;
+  color: rgb(29, 53, 87);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  padding: 5px;
+  background-image: url("/static/Background-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  top: 0px;
+  }
+
+.section {
+  position: absolute;
+  background-color: rgba(241, 250, 238, 0.3);
+  height: 30vh;
+  min-height: fit-content;
+  width: 70%;
+  margin: 0 30px;
+  min-width: fit-content;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 2vh;
+  bottom: 20vh;
+}
+
+.form-container{
+  height: 60%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 1px;
+  border-radius: 10px;
+  background-color: #F2F2F2;
+  height: 30%;
+}
+
+.form-response{
+  height: 15%;
+  width: 80%;
+  font-size: 2vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+input{
+  width: 80%;
+  height: 100%;
+  background-color: transparent;
+  border: transparent;
+  text-align: left;
+}
+
+button{
+  font-size: 2vh;
+  border-radius: 20px;
+  padding: 15px 20px;
+}
